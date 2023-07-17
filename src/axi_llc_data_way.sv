@@ -116,7 +116,7 @@ module axi_llc_data_way #(
     end
   end
 
-  tc_sram #(
+  tc_sram_wrapper #(
     .NumWords   ( Cfg.NumLines * Cfg.NumBlocks ),
     .DataWidth  ( Cfg.BlockSize                ),
     .ByteWidth  ( 32'd8                        ),

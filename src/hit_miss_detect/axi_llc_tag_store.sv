@@ -267,7 +267,7 @@ module axi_llc_tag_store #(
     tag_data_t ram_rdata;    // read data from the sram
     tag_data_t ram_compared; // comparison result of tags
 
-    tc_sram #(
+    tc_sram_wrapper #(
       .NumWords    ( Cfg.NumLines                 ),
       .DataWidth   ( TagDataLen                   ),
       .ByteWidth   ( TagDataLen                   ),
